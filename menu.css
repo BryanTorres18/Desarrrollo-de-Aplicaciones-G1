@@ -1,0 +1,123 @@
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(7, 155, 185);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    display: grid;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+@media (max-width:700px){
+    header{
+       flex-direction: column; 
+    }
+}
+
+footer{
+    background-color: rgb(7, 155, 185);
+    padding: 1em 0;
+    text-align: center;
+}
+
+/*Selectores de Atributos*/
+a[href] {
+    color: white;
+    text-decoration: none;
+}
+
+img[src] {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+/*Selectores de Pseudo Clases*/
+table tr:first-child {
+    background-color: #f0f0f0;
+}
+
+table tr:last-child {
+    background-color: #f0f0f0;
+}
+
+a:not(:visited) {
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(60, 60, 234);
+}
+
+table tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+table tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+a:active {
+    color: green;
+}
+
+a:focus {
+    outline: 2px solid blue;
+}
+
+a:contains("Inicio") {
+    font-style: italic;
+}
+
+/*Selectores de Pseudo Elementos*/
+body p:first-of-type {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 150%;
+}
+
+th::first-child {
+    text-transform: uppercase;
+}
+
+td::last-child {
+    font-weight: bold;
+}
+
+h1::before {
+    content: "🍽 ";
+    font-size: 24px;
+}
+
+h1::after {
+    content: " 🍔";
+    font-size: 24px;
+}
+
+blockquote::first-line {
+    font-style: italic;
+}
+
+a::after {
+    content: "➔";
+}
