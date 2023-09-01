@@ -4,59 +4,9 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Formulario Web</title> 
-    <style> 
-        form { 
-            /* Centrar el formulario en la página */ 
-            margin: 0 auto; 
-            width: 400px; 
-            /* Esquema del formulario */ 
-            padding: 1em; 
-            border: 1px solid #CCC; 
-            border-radius: 1em; 
-        } 
-        ul { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-        } 
-        form li + li { 
-            margin-top: 1em; 
-        } 
-        label { 
-            /* Tamaño y alineación uniforme */ 
-            display: inline-block; 
-            width: 150px; 
-            text-align: right; 
-        } 
-        input, 
-        textarea { 
-            /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra */ 
-            font: 1em sans-serif; 
-            /* Tamaño uniforme del campo de texto */ 
-            width: 250px; 
-            box-sizing: border-box; 
-            /* Hacer coincidir los bordes del campo del formulario */ 
-            border: 1px solid #999; 
-        } 
-        input:focus, 
-        textarea:focus { 
-            /* Destacado adicional para elementos que tienen el cursor */ 
-            border-color: #000; 
-        } 
-        textarea { 
-            /* Alinear los campos de texto multilínea con sus etiquetas */ 
-            vertical-align: top; 
-            /* Proporcionar espacio para escribir texto */ 
-            height: 5em; 
-        } 
-        .button { 
-            /* Alinear los botones con los campos de texto */ 
-            text-align: center; 
-            margin-top: 1em; 
-        } 
-
-    </style> 
-
+    <link rel="stylesheet" href="css_infocontacto/combinadosymultiples.css">
+    <link rel="stylesheet" href="css_infocontacto/regex.css">
+    <link rel="stylesheet" href="css_infocontacto/hereciaycascada.css">
     <meta property="og:title" content= "Antojitos del Mar | Contactanos"/> 
     <meta property="og:type" content= "website"/> 
     <meta property="og:url" content= "https://www.AntojitosdelMar.pe/Contactanos" /> 
@@ -70,14 +20,13 @@
     <meta name="twitter:image" content="AntojitosdelMar.png">
 </head> 
 <body> 
-    <h1>Informacion Cliente</h1> 
+    <h1><img src="AntojitosdelMar.png" width="70"> Informacion Cliente</h1> 
     <form action="/my-handling-form-page" method="post"> 
         <ul> 
             <li>  
-                <label for="nombre_apellidos">Nombre y Apellidos</label> 
+                <label for="nombre_apellidos">Nombre y Apellidos:</label> 
                 <input type="text" id="nombre" name="nombre_apellidos" required> 
             </li> 
-        
             <li>  
                 <label for="numero">Numero Telefonico:</label> 
                 <input type="numero" id="numero" name="numero" required> 
@@ -96,5 +45,4 @@
         </ul> 
     </form> 
 </body> 
-
 </html> 
