@@ -1,0 +1,35 @@
+html{
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+img {
+    display: inline-block;
+}
+h1 {
+    font-family: 'Lucida Handwriting';
+    font-size: 3em;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+#contenedor{
+    background-color: rgba(255, 255, 255, 0.356);
+}
+#parrafo{
+    display:inline-block;
+    width: 50vw;
+    text-align: justify;
+    padding:5vw
+}
+#imagen{
+    text-align: center;
+    display: inline-block;
+    width: 35vw; 
+    height: 50vh;
+}
